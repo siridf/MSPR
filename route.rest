@@ -1,0 +1,33 @@
+GET http://localhost:3000/products
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" : "Smartphone", 
+    "price": 299, 
+    "description" : "Smartphone entrée de game", 
+    "color": "noir", 
+    "stock": 300
+}
+
+###
+
+GET http://localhost:3000/products/661ff3256a2ee1b297c45d0d
+
+###
+
+DELETE http://localhost:3000/products/661f79aaf8555beac9e96ad6
+
+###
+
+PATCH http://localhost:3000/products/661ff3256a2ee1b297c45d0d
+Content-Type: application/json
+
+{
+    "name" : "Smartphone updated", 
+    "price": 400
+}
+
